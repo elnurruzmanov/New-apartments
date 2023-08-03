@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Task</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core/index.min.css" />
+    <link rel="stylesheet" href="./Css/style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <div class="container">
+        <nav class="navbar">
+          <div class="nav-logo">
+            <a href="#"> <img src="./images/Group.png" width="269" height="35" alt="logo" /> </a>
+          </div>
+          <div class="nav-links">
+            <div class="navbar-social">
+              <a href="https://telegram.org" class="socila-icon tg">
+                <img src="./images/telegram.png" alt="telegram" />
+              </a>
+              <a href="https://whatsapp.com" class="socila-icon wt">
+                <img src="./images/whatsapp.png" alt="whatsapp" />
+              </a>
+            </div>
+            <div class="navbar-number">
+              <a href="tel:+998991234567" class="navbar-number"
+                >+99899 123 45 67</a
+              >
+            </div>
+          </div>
+        </nav>
+      </div>
+      <a href="#" class="mansions">
+        <img src="./images/Mansions.png" alt="mainsions" />
+      </a>
+      <a href="#" class="park">
+        <img src="./images/Park.png" alt="Park" />
+      </a>
+      <a href="#" class="road">
+        <img src="./images/Road.png" alt="Road" />
+      </a>
+      <div class="apartments">
+        <label for="apartcheck" class="apartcheck">
+          <img src="./images/Apartments.png" alt="Apartments" />
+        </label>
+        <input type="checkbox" id="apartcheck" class="apartchecked">
+        <div class="modal-apart">
+          <div class="modal-child-apart">
+              <label for="apartcheck"><span class="close-apart">&times;</span></label>
+              <div id="viewer" style="width: 100%; height: 100%;"></div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="download-link">
+        <input type="checkbox" id="checkinput">
+        <label class="modalLabelcheck" for="checkinput">
+          <img src="./images/download.png" alt="download">
+        </label>
+        <div class="modal">
+          <div class="modal-child">
+            <label class="modal-close-label" for="checkinput">
+              <img src="./images/closeIcon.png" alt="close">
+            </label>
+            <div class="modal-flex">
+              <div class="modal-img">
+                <h3 class="modal-img-title">Don't Miss <br/> The Unique Offer</h3>
+                <p class="modal-img-text">Be the first to experience the beauty of Keturah Resort at our exclusive private screening event! Leave your contact information below to receive an invitation to our special event.</p>
+                <ul class="modal-img-list">
+                  <li class="modal-img-item">
+                    <a href="https://telegram.org" class="modal-img-item_link"> 
+                      <img src="./images/modalTelegram.png" alt="modalTelegram">
+                      <p class="modal-img-item_text" >Telegram</p>
+                    </a>
+                  </li>
+                  <li class="modal-img-item whatsapp">
+                    <a href="https://whatsapp.com" class="modal-img-item_link"> 
+                      <img src="./images/modalWhatsapp.png" alt="modalWhatsapp">
+                      <p class="modal-img-item_text" >Whatsapp</p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="modal-form">
+                <form>
+                  <input class="modal-form-input" type="text" placeholder="Your name" required>
+                  <input class="modal-form-input" type="email" placeholder="Your e-mail" required>
+                  <input class="modal-form-input" type="number" placeholder="Phone number" required>
+                  <button class="btn-form">JOIN NOW</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/three/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core/index.min.js"></script>
+    <script>
+      const viewer = new PhotoSphereViewer.Viewer({
+          container: document.querySelector('#viewer'),
+          panorama: './images/2.png',
+      });
+  </script>
+  </body>
+</html>

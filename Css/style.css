@@ -1,0 +1,327 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.552),
+      rgba(0, 0, 0, 0.163)
+    ),
+    url("../images/background.jpg");
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.navbar {
+  width: 100%;
+  height: 60px;
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+  justify-content: space-between;
+  border-bottom: 1px solid #ffffff5b;
+}
+
+.nav-logo {
+  /* border: 1px solid red; */
+  width: 285px;
+  height: 49px;
+  border-right: 1px solid #ffffff5b;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-social a {
+  margin: 0 6px;
+}
+
+.navbar-social {
+  border-right: 1px solid #ffffff5b;
+  border-left: 1px solid #ffffff5b;
+  height: 49px;
+  width: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-number {
+  width: 165px;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}
+
+.navbar-number a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.94px;
+  color: #ffffff;
+  margin-left: 10px;
+}
+
+.mansions {
+  position: absolute;
+  top: 55%;
+  left: 9.5%;
+}
+
+.park {
+  position: absolute;
+  top: 52%;
+  left: 33%;
+}
+
+.road {
+  position: absolute;
+  top: 71%;
+  left: 65%;
+}
+
+.apartments {
+  position: absolute;
+  top: 23%;
+  left: 50%;
+}
+
+/* Modal section */
+.modal {
+  position: fixed;
+  background-color: #000000cb;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+}
+
+/* #checkinput:checked ~ .modal {
+  display: flex;
+} */
+
+.download-link:has(#checkinput:checked) > .modal {
+  display: flex;
+}
+
+.download-link {
+  position: absolute;
+  bottom: 9%;
+  left: 5%;
+}
+
+#checkinput {
+  width: 0;
+  height: 0;
+}
+
+.modal-child {
+  width: 914px;
+  height: 440px;
+  background-color: #000000;
+  position: relative;
+}
+
+.modalLabelcheck {
+  cursor: pointer;
+}
+
+.modal-close-label {
+  position: absolute;
+  top: -13px;
+  right: -13px;
+  cursor: pointer;
+}
+
+/* Modal Form */
+
+.modal-flex {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal-form {
+  width: 450px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-form form {
+  width: 350px;
+  height: 100%;
+  padding: 60px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.modal-img {
+  background-image: url("../images/modalBackground.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 457px;
+  height: 100%;
+  padding: 60px 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.modal-img-list {
+  display: flex;
+  align-items: center;
+}
+
+.modal-img-item {
+  margin: 25px 15px;
+}
+
+.modal-img-title {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 45px;
+  color: #ffffff;
+  text-align: center;
+  width: 392px;
+  margin-top: 25px;
+}
+
+.modal-img-text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #fff;
+  width: 383px;
+  margin-top: 25px;
+}
+
+.modal-img-item_link {
+  display: flex;
+  align-items: center;
+}
+
+.modal-img-item_text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 33.63px;
+  color: #f3f2ef;
+  margin-left: 10px;
+}
+
+.modal-form-input {
+  width: 100%;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Montserrat" sans-serif;
+  padding: 10px 5px;
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #919191;
+  margin-bottom: 30px;
+}
+
+.btn-form {
+  margin-top: 10px;
+  font-family: "Montserrat" sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  display: flex;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* Appart child modal */
+
+.modal-apart {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.559);
+  z-index: 1000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+}
+
+.modal-child-apart {
+  width: 1200px;
+  height: 600px;
+  background-color: #fff;
+  position: relative;
+}
+
+.close-apart {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  font-size: 40px;
+  color: #000;
+  font-weight: 700;
+  cursor: pointer;
+  height: 50px;
+  width: 40px;
+  z-index: 1000;
+}
+
+.apartments:has(#apartcheck:checked) > .modal-apart {
+  display: flex;
+}
+
+#apartcheck {
+  width: 0;
+  height: 0;
+}
+
+.apartcheck {
+  cursor: pointer;
+}
