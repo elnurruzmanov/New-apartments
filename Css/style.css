@@ -16,12 +16,7 @@ body {
 }
 
 main {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.552),
-      rgba(0, 0, 0, 0.163)
-    ),
-    url("../images/background.jpg");
+  background-image: url("../images/background.jpg");
   background-size: 100% 100%;
   width: 100%;
   height: 100vh;
@@ -259,8 +254,15 @@ main {
   background: none;
   border: none;
   outline: none;
+  color: #ffff;
   border-bottom: 1px solid #919191;
   margin-bottom: 30px;
+}
+
+.number-input::-webkit-outer-spin-button,
+.number-input::-webkit-inner-spin-button {
+  display: none;
+  -webkit-appearance: none;
 }
 
 .btn-form {
